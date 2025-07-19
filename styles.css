@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: system-ui;
 }
 
 html {
@@ -36,52 +36,84 @@ body {
 }
 
 .users-ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: center;
   align-items: center;
   background-color: #e8e7f1;
   margin-top: -40px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   overflow: hidden;
+  padding: 20px;
 }
 
 .user-card {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-content: center;
   background-color: #a998f9;
   background-color: #6f4ae0;
-  border: #fff solid 1px;
-  width: 80vw;
-  height: 50px;
-  margin: 10px;
+  font-weight: bold;
+  border: #291c80 solid 3px;
+  border-radius: 10px;
+  height: 25dvh;
+  width: 200px;
+  margin-bottom: 20px;
   list-style: none;
   text-decoration: none;
 }
 
+.user-card h4 {
+  color: #fff;
+  font-size: 2em;
+}
+
+.user-card-foodcheck-container {
+  background-color: #a998f9;
+  background-color: #fff;
+  margin-bottom: 2px;
+  border-radius: 4px;
+}
+
 .user-card-foodcheck {
-  background-color: #cf3bad;
+  color: #190885;
 }
 
 .user-card-foodlabel {
-  background-color: #c28ee0;
+  font-weight: bold;
+  color: #190885;
 }
 
 .user-card-foodexpense {
-  background-color: #c28ee0;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
 }
+
+.user-card-drinkcheck-container {
+  background-color: #a998f9;
+  background-color: #fff;
+}
+
 .user-card-drinkcheck {
   background-color: #8d22d4;
 }
 
 .user-card-drinklabel {
-  background-color: #9ea3f5;
+  background-color: #fff;
+  color: #190885;
 }
 
 .user-card-drinkexpense {
-  background-color: #9ea3f5;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
 }
 
 .footer {

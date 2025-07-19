@@ -1,6 +1,6 @@
-import { addUser, renderUsersList } from "./services.js";
+import { addUser, render } from "./src/services.js";
 
 const addUserBtn = document.getElementById("addUserBtn");
-
-renderUsersList();
 addUserBtn.addEventListener("click", addUser);
+
+render();

@@ -1,6 +1,7 @@
 {
   "name": "cuentas-claras",
   "version": "1.0.0",
+  "type": "module",
   "main": "main.js",
   "dependencies": {},
   "scripts": {
