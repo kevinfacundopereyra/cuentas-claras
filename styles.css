@@ -38,7 +38,7 @@ body {
 .users-ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   background-color: #e8e7f1;
