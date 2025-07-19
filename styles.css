@@ -37,9 +37,10 @@ body {
 
 .users-ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: left;
   align-items: center;
+  gap: 20px;
   background-color: #e8e7f1;
   margin-top: -40px;
   border-top-left-radius: 24px;
@@ -58,8 +59,7 @@ body {
   font-weight: bold;
   border: #291c80 solid 3px;
   border-radius: 10px;
-  height: 25dvh;
-  width: 200px;
+  width: auto;
   margin-bottom: 20px;
   list-style: none;
   text-decoration: none;
@@ -68,6 +68,7 @@ body {
 .user-card h4 {
   color: #fff;
   font-size: 2em;
+  overflow: hidden;
 }
 
 .user-card-foodcheck-container {
