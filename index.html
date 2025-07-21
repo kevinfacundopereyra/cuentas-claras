@@ -10,20 +10,42 @@
     <header>
         <navbar class="navbar">
             <h1>Cuentas claras</h1>         
-            <div>
-                <input placeholder="Nombre del cuerpo" type="text" id="nameInput"></input>
-                <button type="submit" id="addUserBtn">Agregar ciruja</button>
 
-            </div>
+                <ul class="users-add">
+                    <li class="user-card-add">
+                        <h4>
+                            <input id="nameInput" type="text" class="user-card-input" placeholder="Nombre del cuerpo" />
+                        </h4>
+
+                        <div class="user-card-foodcheck-container">
+                            <label class="user-card-foodlabel" for="food">¿Comió?</label>
+                            <input id="food" checked class="user-card-foodcheck" type="checkbox" />
+                        </div>
+        
+                        <input id="foodexpense" class="user-card-foodexpense" type="number" placeholder="¿Cuánto gastó?" />
+
+                        <div class="user-card-drinkcheck-container">
+                            <label class="user-card-drinklabel" for="drink">¿Escavió?</label>
+                            <input id="drink" checked class="user-card-drinkcheck" type="checkbox" />
+                        </div>
+            
+                        <input id="drinkexpense-Juan" class="user-card-drinkexpense" type="number" placeholder="¿Cuánto gastó?" />
+                        <button type="submit" id="addUserBtn"> ➕</button>
+                    </li>
+                </ul>
+
+
+
         </navbar>
     </header>
 
     <main class="main">
        <ul id="usersUl" class="users-ul"></ul>
+
     </main>
 
     <footer id="footer" class="footer">
-        <button id="footerBtn" class="footer-btn">
+        <button id="calcDebtBtn" class="footer-btn">
             💸
         </button>
     </footer>

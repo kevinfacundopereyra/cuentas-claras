@@ -23,9 +23,35 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #190885;
-  background-color: #291c80;
+  background-color: #6f4ae0;
   color: #fff;
   padding-bottom: 50px;
+}
+
+.user-card-add {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  background-color: #6f4ae0;
+  background-color: #a998f9;
+  font-weight: bold;
+  border: #a998f9 solid 10px;
+  border-radius: 10px;
+}
+
+#nameInput {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#addUserBtn {
+  background-color: #5dbbf1;
+  font-size: 40px;
+  border-radius: 100%;
+  width: 60px;
+  border: solid #d2d1da;
+  align-self: center;
 }
 
 .main {
@@ -125,14 +151,14 @@ body {
   position: fixed;
   bottom: 0;
   margin-top: auto;
-  background-color: #291c80;
+  background-color: #6f4ae0;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .footer-btn {
-  background-color: rgb(93, 187, 241);
+  background-color: #5dbbf1;
   height: 60px;
   width: 60px;
   font-size: 40px;
