@@ -20,7 +20,7 @@ function renderUsersList(usersUl, users) {
     const inputCheck = document.createElement("input");
     inputCheck.id = "foodExpense";
     inputCheck.type = "checkbox";
-    inputCheck.checked = "true";
+    inputCheck.checked = user.ate;
     inputCheck.className = "user-card-foodcheck";
 
     const input = document.createElement("input");
@@ -42,7 +42,7 @@ function renderUsersList(usersUl, users) {
     const inputCheckD = document.createElement("input");
     inputCheckD.id = "drinkExpense";
     inputCheckD.type = "checkbox";
-    inputCheckD.checked = "true";
+    inputCheckD.checked = user.drank;
     inputCheckD.className = "user-card-drinkcheck";
 
     const inputD = document.createElement("input");
