@@ -28,13 +28,23 @@ function showDebt(usersList) {
         <p>Deuda por persona: $${individualDebt.toFixed(2)}</p>
         <ul style="text-align: left;">
           ${usersList
-            .map(
-              (user) => `
-            <li><strong>${user.name}:</strong> pagó $${
-                user.totalExpense
-              }, debe $${(individualDebt - user.totalExpense).toFixed(2)}</li>
-          `
-            )
+            .map((user) => {
+              let debtText;
+              if (user.debt === 0) {
+                debtText = `<strong>no debe nada!</strong>`;
+              }
+              if (user.debt < 0) {
+                debtText = `<strong>hay que pagarle:</strong> $${Math.abs(
+                  user.debt
+                )}`;
+              }
+              if (user.debt > 0) {
+                debtText = `<strong>debe:</strong> $${Math.abs(user.debt)}`;
+              }
+              return `<li><strong>${user.name}:</strong>
+                       pagó $${user.totalExpense}
+                      , ${debtText}</li>`;
+            })
             .join("")}
         </ul>
         <button id="closeModalBtn" style="

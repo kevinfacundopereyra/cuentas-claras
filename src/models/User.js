@@ -6,7 +6,6 @@ class User {
     this.partialDebt = parseInt(partialDebt) || 0;
 
     this.totalExpense = this.calculateTotalExpense();
-    this.debt = this.calculateDebt();
   }
 
   calculateTotalExpense() {
@@ -14,9 +13,8 @@ class User {
     return this.totalExpense;
   }
 
-  calculateDebt() {
-    this.debt = this.partialDebt - this.totalExpense;
-    return this.debt;
+  get debt() {
+    return Math.floor(this.partialDebt - this.totalExpense);
   }
 
   viewUser() {

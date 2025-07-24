@@ -49,6 +49,15 @@ function addUser() {
 }
 
 function calcDebt() {
+  const totalExpenses = newUsersList.reduce(
+    (acc, user) => acc + user.totalExpense,
+    0
+  );
+  const individualDebt = totalExpenses / newUsersList.length;
+  newUsersList.forEach((user) => {
+    user.partialDebt = individualDebt;
+    user.viewUser();
+  });
   showDebt(newUsersList);
 }
 

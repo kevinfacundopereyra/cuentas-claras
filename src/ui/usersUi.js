@@ -49,7 +49,7 @@ function renderUsersList(usersUl, users) {
     inputD.type = "number";
     inputD.id = `drinkexpense-${user.name}`;
     inputD.placeholder = user.drinkExpense
-      ? `${user.foodExpense}`
+      ? `${user.drinkExpense}`
       : "¿Cuánto gastó?";
     inputD.className = "user-card-drinkexpense";
 
