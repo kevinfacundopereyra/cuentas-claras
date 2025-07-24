@@ -25,7 +25,7 @@ function showDebt(usersList) {
         position: relative;
       ">
         <h2>Total de la deuda: $${totalExpenses}</h2>
-        <p>Deuda por persona: $${individualDebt.toFixed(2)}</p>
+        <p>Deuda por persona: $<strong>${individualDebt.toFixed(2)}</strong></p>
         <ul style="text-align: left;">
           ${usersList
             .map((user) => {
@@ -42,8 +42,8 @@ function showDebt(usersList) {
                 debtText = `<strong>debe:</strong> $${Math.abs(user.debt)}`;
               }
               return `<li><strong>${user.name}:</strong>
-                       pagó $${user.totalExpense}
-                      , ${debtText}</li>`;
+                       pagó $${user.totalExpense},
+                       ${debtText}</li>`;
             })
             .join("")}
         </ul>
