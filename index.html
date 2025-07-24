@@ -14,23 +14,23 @@
                 <ul class="users-add">
                     <li class="user-card-add">
                         <h4>
-                            <input id="nameInput" type="text" class="user-card-input" placeholder="Nombre del cuerpo" />
+                            <input id="nameInput" type="text" autocomplete="off" class="user-card-input" placeholder="Nombre del cuerpo" />
                         </h4>
 
                         <div class="user-card-foodcheck-container">
                             <label class="user-card-foodlabel" for="food">¿Comió?</label>
-                            <input id="food" checked class="user-card-foodcheck" type="checkbox" />
+                            <input id="foodCheck" checked class="user-card-foodcheck" type="checkbox"/>
                         </div>
         
-                        <input id="foodexpense" class="user-card-foodexpense" type="number" placeholder="¿Cuánto gastó?" />
+                        <input id="foodExpense" min="0" step="1" class="user-card-foodexpense" type="number" autocomplete="off" placeholder="¿Cuánto gastó?" />
 
                         <div class="user-card-drinkcheck-container">
                             <label class="user-card-drinklabel" for="drink">¿Escavió?</label>
-                            <input id="drink" checked class="user-card-drinkcheck" type="checkbox" />
+                            <input id="drinkCheck" min="0" step="1" checked class="user-card-drinkcheck" type="checkbox" />
                         </div>
             
-                        <input id="drinkexpense-Juan" class="user-card-drinkexpense" type="number" placeholder="¿Cuánto gastó?" />
-                        <button type="submit" id="addUserBtn"> ➕</button>
+                        <input id="drinkExpense" class="user-card-drinkexpense" type="number" autocomplete="off" placeholder="¿Cuánto gastó?" />
+                        <button type="submit" id="addUserBtn">➕</button>
                     </li>
                 </ul>
 

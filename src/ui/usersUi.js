@@ -18,7 +18,7 @@ function renderUsersList(usersUl, users) {
     labelCheck.className = "user-card-foodlabel";
 
     const inputCheck = document.createElement("input");
-    inputCheck.id = "food";
+    inputCheck.id = "foodExpense";
     inputCheck.type = "checkbox";
     inputCheck.checked = "true";
     inputCheck.className = "user-card-foodcheck";
@@ -26,7 +26,9 @@ function renderUsersList(usersUl, users) {
     const input = document.createElement("input");
     input.type = "number";
     input.id = `foodexpense-${user.name}`;
-    input.placeholder = "¿Cuánto gastó?";
+    input.placeholder = user.foodExpense
+      ? `${user.foodExpense}`
+      : "¿Cuánto gastó?";
     input.className = "user-card-foodexpense";
 
     const checkContainerD = document.createElement("div");
@@ -38,7 +40,7 @@ function renderUsersList(usersUl, users) {
     labelCheckD.className = "user-card-drinklabel";
 
     const inputCheckD = document.createElement("input");
-    inputCheckD.id = "drink";
+    inputCheckD.id = "drinkExpense";
     inputCheckD.type = "checkbox";
     inputCheckD.checked = "true";
     inputCheckD.className = "user-card-drinkcheck";
@@ -46,8 +48,14 @@ function renderUsersList(usersUl, users) {
     const inputD = document.createElement("input");
     inputD.type = "number";
     inputD.id = `drinkexpense-${user.name}`;
-    inputD.placeholder = "¿Cuánto gastó?";
+    inputD.placeholder = user.drinkExpense
+      ? `${user.foodExpense}`
+      : "¿Cuánto gastó?";
     inputD.className = "user-card-drinkexpense";
+
+    const total = document.createElement("div");
+    total.innerText = `Total: $${user.totalExpense}`;
+    total.className = "user-card-total";
 
     checkContainer.appendChild(labelCheck);
     checkContainer.appendChild(inputCheck);
@@ -59,6 +67,7 @@ function renderUsersList(usersUl, users) {
     li.appendChild(input);
     li.appendChild(checkContainerD);
     li.appendChild(inputD);
+    li.appendChild(total);
 
     usersUl.appendChild(li);
   });
