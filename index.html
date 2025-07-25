@@ -14,7 +14,7 @@
                 <ul class="users-add">
                     <li class="user-card-add">
                         <h4>
-                            <input id="nameInput" type="text" autocomplete="off" class="user-card-input" placeholder="Nombre del cuerpo" />
+                            <input id="nameInput" type="text" autocomplete="off" class="user-card-input" placeholder="Nombre" />
                         </h4>
 
                         <div class="user-card-foodcheck-container">
@@ -22,14 +22,14 @@
                             <input id="foodCheck" checked autocomplete="off" class="user-card-foodcheck" type="checkbox"/>
                         </div>
         
-                        <input id="foodExpense" min="0" step="1" class="user-card-foodexpense" type="number" autocomplete="off" placeholder="¿Cuánto puso?" />
+                        <input id="foodExpense" min="0" step="1" class="user-card-foodexpense" type="number" autocomplete="off" placeholder="¿Cuánto gastó en comida?" />
 
                         <div class="user-card-drinkcheck-container">
-                            <label class="user-card-drinklabel" for="drink">¿Escavió?</label>
+                            <label class="user-card-drinklabel" for="drink">Bebió?</label>
                             <input id="drinkCheck" min="0" step="1" checked autocomplete="off"class="user-card-drinkcheck" type="checkbox" />
                         </div>
             
-                        <input id="drinkExpense" class="user-card-drinkexpense" type="number" autocomplete="off" placeholder="¿Cuánto puso?" />
+                        <input id="drinkExpense" class="user-card-drinkexpense" type="number" autocomplete="off" placeholder="¿Cuánto gastó en bebida?" />
                         <button type="submit" id="addUserBtn">➕</button>
                     </li>
                 </ul>
@@ -48,6 +48,7 @@
         <button id="calcDebtBtn" class="footer-btn">
             💸
         </button>
+        <p class="footer-p">Aclarar cuentas</p>
     </footer>
 
     <script type="module" src="main.js"></script>

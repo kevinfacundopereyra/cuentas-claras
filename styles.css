@@ -24,6 +24,7 @@ body {
   align-items: center;
   background-color: #190885;
   background-color: #6f4ae0;
+  background-color: #987bf0;
   color: #fff;
   padding-bottom: 50px;
 }
@@ -34,10 +35,15 @@ body {
   text-align: center;
   align-content: center;
   background-color: #6f4ae0;
-  background-color: #a998f9;
+  background-color: #ffffff;
   font-weight: bold;
-  border: #a998f9 solid 10px;
+  border: #ffffff solid 10px;
   border-radius: 10px;
+}
+
+.user-card-add input {
+  color: #000;
+  font-weight: bold;
 }
 
 #nameInput {
@@ -46,7 +52,7 @@ body {
 }
 
 #addUserBtn {
-  background-color: #5dbbf1;
+  background-color: #987bf0af;
   font-size: 40px;
   border-radius: 100%;
   width: 60px;
@@ -59,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
-  border: 20px solid #6f4ae0;
+  border: 20px solid #987bf0;
 }
 
 .users-ul {
@@ -82,7 +88,7 @@ body {
   text-align: center;
   align-content: center;
   background-color: #a998f9;
-  background-color: #6f4ae0;
+  background-color: #987bf0;
   font-weight: bold;
   border: #291c80 solid 3px;
   border-radius: 10px;
@@ -160,18 +166,22 @@ body {
   position: fixed;
   bottom: 0;
   margin-top: auto;
-  background-color: #6f4ae0;
+  background-color: #987bf0;
   width: 100%;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .footer-btn {
-  background-color: #5dbbf1;
+  background-color: #987bf0af;
   height: 60px;
   width: 60px;
   font-size: 40px;
   transform: translateY(-50%);
   border-radius: 100%;
   border: solid #d2d1da;
+}
+
+.footer-p {
+  color: #fff;
 }
