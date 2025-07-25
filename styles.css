@@ -22,6 +22,7 @@ body {
   background-color: #e8e7f1;
   display: flex;
   flex-direction: column;
+  background-image: url("./assets/images/bg.jpg");
 }
 
 .navbar {
@@ -79,7 +80,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #e8e7f1;
+  background-color: #ffffff;
   margin-top: -40px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
