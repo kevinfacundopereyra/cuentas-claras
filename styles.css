@@ -1,3 +1,9 @@
+:root {
+  --color-primario: #189456a9;
+  --color-secundario: #987bf0af;
+  --color-texto: #ffffff;
+}
+
 *,
 *::before,
 *::after {
@@ -22,9 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #190885;
-  background-color: #6f4ae0;
-  background-color: #987bf0;
+  background-color: var(--color-primario);
   color: #fff;
   padding-bottom: 50px;
 }
@@ -34,7 +38,6 @@ body {
   flex-direction: column;
   text-align: center;
   align-content: center;
-  background-color: #6f4ae0;
   background-color: #ffffff;
   font-weight: bold;
   border: #ffffff solid 10px;
@@ -52,7 +55,6 @@ body {
 }
 
 #addUserBtn {
-  background-color: #987bf0af;
   font-size: 40px;
   border-radius: 100%;
   width: 60px;
@@ -65,7 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
-  border: 20px solid #987bf0;
+  border: 20px solid var(--color-primario);
 }
 
 .users-ul {
@@ -87,10 +89,9 @@ body {
   flex-direction: column;
   text-align: center;
   align-content: center;
-  background-color: #a998f9;
-  background-color: #987bf0;
+  background-color: var(--color-primario);
   font-weight: bold;
-  border: #987bf0 solid 3px;
+  border: var(--color-primario) solid 3px;
   border-radius: 10px;
   width: auto;
   margin-bottom: 20px;
@@ -140,11 +141,10 @@ body {
 }
 
 .user-card-drinkcheck {
-  background-color: #8d22d4;
+  background-color: var(--color-primario);
 }
 
 .user-card-drinklabel {
-  background-color: #fff;
   color: #190885;
 }
 
@@ -166,14 +166,14 @@ body {
   position: fixed;
   bottom: 0;
   margin-top: auto;
-  background-color: #987bf0;
+  background-color: var(--color-primario);
   width: 100%;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
 
 .footer-btn {
-  background-color: #987bf0af;
+  background-color: #fff;
   height: 60px;
   width: 60px;
   font-size: 40px;
