@@ -68,6 +68,8 @@ body {
   flex-direction: column;
   padding-bottom: 50px;
   border: 20px solid var(--color-primario);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .users-ul {
@@ -174,8 +176,6 @@ body {
 
 .footer-btn {
   background-color: #fff;
-  height: 60px;
-  width: 60px;
   font-size: 40px;
   transform: translateY(-50%);
   border-radius: 100%;
